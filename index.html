@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="FIT MIND — Next-gen healthcare supplements for mental fitness. Focus, energy, and clarity engineered for Gen Z." />
+  <title>FIT MIND | Mental Fitness Supplements</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Phosphor Icons CDN (lightweight icon set) -->
+  <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/bold/style.css" />
+</head>
+<body>
+
+  <!-- ===================== PARTICLE CANVAS ===================== -->
+  <canvas id="particle-canvas"></canvas>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="#" class="nav-logo">FIT&nbsp;<span>MIND</span></a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#benefits">Benefits</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <!-- Hamburger for mobile -->
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="hero">
+    <!-- Floating decorative shapes -->
+    <div class="floating-shape"></div>
+    <div class="floating-shape"></div>
+    <div class="floating-shape"></div>
+
+    <div class="hero-content">
+      <p class="hero-tag">// Next-Gen Health Supplements</p>
+      <h1 class="hero-title">
+        UNLOCK YOUR<br /><span class="highlight">FIT MIND</span>
+      </h1>
+      <p class="hero-subtitle">
+        Engineered for the relentless. Fuel your brain, sharpen your focus, and
+        dominate every challenge with science-backed supplements built for Gen Z.
+      </p>
+      <a href="#products" class="btn-neon" id="heroBtn">SHOP NOW</a>
+    </div>
+  </section>
+
+  <!-- ===================== PRODUCTS ===================== -->
+  <section class="products" id="products">
+    <div class="container">
+      <div class="products-header reveal">
+        <span class="section-tag">// Our Lineup</span>
+        <h2 class="section-title">Supplements That&nbsp;Hit&nbsp;Different</h2>
+        <p class="section-desc">
+          Three precision-engineered formulas designed to unlock peak mental
+          performance — zero fluff, all results.
+        </p>
+      </div>
+
+      <div class="products-grid">
+        <!-- Card 1 -->
+        <div class="product-card reveal">
+          <div class="product-icon">🧠</div>
+          <h3 class="product-name">Focus Boost</h3>
+          <p class="product-desc">
+            Razor-sharp concentration powered by nootropics. Stay locked in
+            during study sessions, gaming marathons, or deep work sprints.
+          </p>
+          <p class="product-price">$39.99</p>
+          <button class="btn-outline btn-neon-ripple">Add to Cart</button>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="product-card reveal">
+          <div class="product-icon">⚡</div>
+          <h3 class="product-name">Brain Fuel</h3>
+          <p class="product-desc">
+            Long-lasting cognitive energy without the crash. Adaptogenic herbs
+            and B-vitamins keep your mind firing all day.
+          </p>
+          <p class="product-price">$44.99</p>
+          <button class="btn-outline btn-neon-ripple">Add to Cart</button>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="product-card reveal">
+          <div class="product-icon">🔥</div>
+          <h3 class="product-name">Energy Core</h3>
+          <p class="product-desc">
+            Clean, sustained energy that fuels both body and brain. Zero
+            jitters, zero sugar — just pure functional power.
+          </p>
+          <p class="product-price">$34.99</p>
+          <button class="btn-outline btn-neon-ripple">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== BENEFITS ===================== -->
+  <section class="benefits" id="benefits">
+    <div class="container">
+      <div class="benefits-header reveal">
+        <span class="section-tag">// Why FIT MIND</span>
+        <h2 class="section-title">Built for the Grind</h2>
+        <p class="section-desc">
+          Every capsule is loaded with research-backed ingredients that deliver
+          real, measurable results for your mind and body.
+        </p>
+      </div>
+
+      <div class="benefits-grid">
+        <div class="benefit-card reveal">
+          <p class="benefit-number">01</p>
+          <h3 class="benefit-title">Mental Clarity</h3>
+          <p class="benefit-text">
+            Cut through brain fog with precision-dosed nootropics that sharpen
+            your thinking and elevate your decision-making.
+          </p>
+        </div>
+
+        <div class="benefit-card reveal">
+          <p class="benefit-number">02</p>
+          <h3 class="benefit-title">Sustained Energy</h3>
+          <p class="benefit-text">
+            Ditch the energy drinks. Our clean formula delivers hours of
+            productive energy without the crash or the chemicals.
+          </p>
+        </div>
+
+        <div class="benefit-card reveal">
+          <p class="benefit-number">03</p>
+          <h3 class="benefit-title">Stress Control</h3>
+          <p class="benefit-text">
+            Adaptogenic compounds actively lower cortisol and help you stay
+            composed under pressure — exams, deadlines, life.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-wrapper">
+        <div class="about-visual reveal">
+          <span class="about-visual-icon">💊</span>
+        </div>
+
+        <div class="about-content reveal">
+          <span class="section-tag">// About Us</span>
+          <h2 class="section-title">We Don't Do&nbsp;Average</h2>
+          <p class="section-desc">
+            FIT MIND was born from a simple idea: Gen Z deserves supplements
+            that are as ambitious as they are. We combine cutting-edge
+            neuroscience with clean, transparent ingredients — no proprietary
+            blends, no BS. Every product is third-party tested and designed for
+            people who refuse to settle.
+          </p>
+          <div class="about-stats">
+            <div class="stat-item">
+              <h3>50K+</h3>
+              <p>Active Users</p>
+            </div>
+            <div class="stat-item">
+              <h3>99%</h3>
+              <p>Clean Ingredients</p>
+            </div>
+            <div class="stat-item">
+              <h3>3X</h3>
+              <p>Lab Tested</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact-wrapper">
+        <div class="contact-left reveal">
+          <span class="section-tag">// Get In Touch</span>
+          <h2 class="section-title">Let's&nbsp;Connect</h2>
+          <p class="section-desc" style="margin-bottom:32px;">
+            Have questions, partnerships, or just want to say what's up? We're
+            always listening.
+          </p>
+
+          <div class="contact-info-card">
+            <div class="contact-info-icon">📧</div>
+            <div class="contact-info-text">
+              <h4>Email</h4>
+              <p>hello@fitmind.co</p>
+            </div>
+          </div>
+
+          <div class="contact-info-card">
+            <div class="contact-info-icon">📍</div>
+            <div class="contact-info-text">
+              <h4>Location</h4>
+              <p>Los Angeles, CA</p>
+            </div>
+          </div>
+
+          <div class="contact-info-card">
+            <div class="contact-info-icon">📱</div>
+            <div class="contact-info-text">
+              <h4>Phone</h4>
+              <p>+1 (800) FIT-MIND</p>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form reveal" id="contactForm">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" placeholder="Enter your name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" placeholder="Enter your email" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" placeholder="What's on your mind?" required></textarea>
+          </div>
+          <button type="submit" class="btn-submit btn-neon-ripple">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="nav-logo">FIT&nbsp;<span>MIND</span></a>
+          <p>
+            Next-generation healthcare supplements engineered for Gen Z.
+            Train your brain, own your energy.
+          </p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Twitter">𝕏</a>
+            <a href="#" class="social-link" aria-label="Instagram">📸</a>
+            <a href="#" class="social-link" aria-label="TikTok">🎵</a>
+            <a href="#" class="social-link" aria-label="YouTube">▶</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Products</h4>
+          <a href="#">Focus Boost</a>
+          <a href="#">Brain Fuel</a>
+          <a href="#">Energy Core</a>
+          <a href="#">Bundles</a>
+        </div>
+
+        <div class="footer-col">
+          <h4>Company</h4>
+          <a href="#">About Us</a>
+          <a href="#">Careers</a>
+          <a href="#">Press</a>
+          <a href="#">Blog</a>
+        </div>
+
+        <div class="footer-col">
+          <h4>Support</h4>
+          <a href="#">FAQ</a>
+          <a href="#">Shipping</a>
+          <a href="#">Returns</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 FIT MIND. All rights reserved.</p>
+        <p>
+          <a href="#">Privacy Policy</a> &middot;
+          <a href="#">Terms of Service</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
