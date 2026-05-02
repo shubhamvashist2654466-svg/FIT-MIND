@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="FIT MIND — Next-gen healthcare supplements for mental fitness. Focus, energy, and clarity engineered for Gen Z." />
+  <meta name="description"
+    content="FIT MIND — Next-gen healthcare supplements for mental fitness. Focus, energy, and clarity engineered for Gen Z." />
   <title>FIT MIND | Mental Fitness Supplements</title>
   <link rel="stylesheet" href="style.css" />
   <!-- Phosphor Icons CDN (lightweight icon set) -->
   <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/bold/style.css" />
 </head>
+
 <body>
 
   <!-- ===================== PARTICLE CANVAS ===================== -->
@@ -297,6 +300,55 @@
     </div>
   </footer>
 
+  <!-- ===================== CHATBOT WIDGET (Bottom-Left) ===================== -->
+  <div id="chatbot-widget" style="
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 9999;
+  ">
+    <!-- Toggle Button -->
+    <button id="chatbot-toggle"
+      onclick="document.getElementById('chatbot-frame').style.display = document.getElementById('chatbot-frame').style.display === 'none' ? 'flex' : 'none'"
+      style="
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      border: 2px solid #ff003c;
+      background: linear-gradient(135deg, #1a1a1a, #0d0d0d);
+      color: #ff003c;
+      font-size: 26px;
+      cursor: pointer;
+      box-shadow: 0 0 18px rgba(255, 0, 60, 0.45);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    " onmouseover="this.style.transform='scale(1.12)'; this.style.boxShadow='0 0 28px rgba(255,0,60,0.7)'"
+      onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 0 18px rgba(255,0,60,0.45)'">
+      💬
+    </button>
+
+    <!-- Chat iframe container -->
+    <div id="chatbot-frame" style="
+      display: none;
+      position: absolute;
+      bottom: 70px;
+      left: 0;
+      width: 380px;
+      height: 520px;
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid rgba(255, 0, 60, 0.3);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6), 0 0 20px rgba(255, 0, 60, 0.2);
+      flex-direction: column;
+    ">
+      <iframe src="https://www.chatbase.co/chatbot-iframe/D0iG7ENePwB2U4pExFcXb" width="100%" height="100%"
+        style="border: none;" allow="microphone"></iframe>
+    </div>
+  </div>
+
   <script src="script.js"></script>
 </body>
+
 </html>
